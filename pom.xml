@@ -7,6 +7,11 @@
   <version>1.0-SNAPSHOT</version>
   <name>helloworld Webapp</name>
   <url>http://obcon.de</url>
+
+  <properties>
+    <finalName>${project.artifactId}-${project.version}</finalName>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -22,6 +27,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>helloworld</finalName>
+    <finalName>${finalName}</finalName>
   </build>
 </project>
